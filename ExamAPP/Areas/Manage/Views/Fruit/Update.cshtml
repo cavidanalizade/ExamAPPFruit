@@ -1,0 +1,32 @@
+﻿@model UpdateFruitVM
+<div class="col-sm-12 col-xl-6">
+    <form method="post" enctype="multipart/form-data">
+
+        <div class="bg-secondary rounded h-100 p-4">
+            <h6 class="mb-4">Floating Label</h6>
+            <div class="form-floating mb-3">
+                <input asp-for="Title" type="text" class="form-control"
+                       placeholder="Enter Title">
+                <label asp-for="Title">Title</label>
+                <span asp-validation-for="Title" style="color:red"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Subtitle" type="text" class="form-control"
+                       placeholder="Enter icon with tag">
+                <label asp-for="Subtitle">Subtitle</label>
+                <span asp-validation-for="Subtitle" style="color:red"></span>
+
+            </div>
+            <div class="form-floating">
+                <input asp-for="Image" class="form-control"></input>
+                <label asp-for="Image">Image</label>
+                <span asp-validation-for="Image" style="color:red"></span>
+
+            </div>
+            <button class="w3-btn" type="submit">Create!</button>
+
+        </div>
+
+    </form>
+
+</div>

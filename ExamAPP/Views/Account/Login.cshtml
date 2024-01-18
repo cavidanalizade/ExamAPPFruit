@@ -1,0 +1,24 @@
+﻿@using ExamAPP.ViewModels
+@model LoginVM
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-secondary rounded h-100 p-4">
+        <h6 class="mb-4">Basic Form</h6>
+        <form method="post">
+            
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" type="email" class="form-control">
+                <span asp-validation-for="Email" style="color:red"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control">
+                <span asp-validation-for="Password" style="color:red"></span>
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+</div>
